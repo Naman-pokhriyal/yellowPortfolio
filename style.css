@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: normal 16px "Open Sans";
+}
+
+a {
+  text-decoration: none;
+}
+/*Grid settings*/
+.wrapper {
+  padding: 0rem 3rem 6rem 3rem;
+  background-image: url(images/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 50px;
+}
+.wrapper > div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-width: 600px) {
+  .no1 {
+    grid-row: 2/8;
+    grid-column: 2/5;
+  }
+  .no2 {
+    grid-row: 3/11;
+    grid-column: 5/7;
+  }
+  .no3 {
+    grid-row: 2/9;
+    grid-column: 7/9;
+  }
+}
+/*On-text settings*/
+/*Alignment*/
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+/*Text-decorations*/
+.text {
+  font: bold 20px "Exo";
+  color: white;
+  text-transform: uppercase;
+}
+.text {
+  transition: 1s;
+}
+/*Animations*/
+.text:hover {
+  background-color: #555;
+  transition: 2s;
+}
+.wrapper > div {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*SECOND WRAPPER SETTINGS*/
+.second-wrapper {
+  background-color: white;
+  margin: 1rem 0 1rem 0;
+  padding: 2rem;
+}
+.second-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 15rem;
+}
+.social-head {
+  font: bold 30px "Exo";
+}
+.social {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+.social > a {
+  color: black;
+}
+.social > a > div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.social > a > div > img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+/*Animation*/
+.social > a:hover {
+  color: darkorange;
+}
+
+/*THIRD WRAPPER*/
+
+.third-wrapper {
+  height: 45rem;
+  background-image: url(images/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 70px;
+}
+.third-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  grid-gap: 1rem;
+}
+/*Align text*/
+.log1 {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*Text decoration*/
+.log1 {
+  font: bold 30px "Exo";
+}
+
+@media screen and (min-width: 600px) {
+  .log1 {
+    grid-column: 3/6;
+    grid-row: 3/5;
+  }
+}
+/*Animation*/
+.log1 > div {
+  font: bold 40px "Exo";
+  opacity: 0;
+  transition: 1s;
+}
+.log1:hover.log1 > div {
+  opacity: 100%;
+  transition: 2s;
+}
+
+/*SCROLLBAR SETTINGS*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #6e4c1eff;
+}
+::-webkit-scrollbar-track {
+  background-color: #ddb65dff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6649b8;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #1e1e24;
+}
